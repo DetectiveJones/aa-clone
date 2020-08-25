@@ -24,7 +24,10 @@ public class GameManager : MonoBehaviour
         
     public void RestartLevel ()
     {
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Score.instance.ResetScore();
+
     }
 
 }
